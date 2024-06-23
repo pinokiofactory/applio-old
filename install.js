@@ -10,6 +10,16 @@ module.exports = {
       }
     },
     {
+      method: "script.start",
+      params: {
+        uri: "torch.js",
+        params: {
+          venv: "env",
+          path: "applio",
+        }
+      }
+    },
+    {
       method: "shell.run",
       params: {
         venv: "env",
@@ -18,16 +28,6 @@ module.exports = {
           "pip install --upgrade setuptools",
           "pip install -r ../requirements.txt",
         ],
-      }
-    },
-    {
-      method: "script.start",
-      params: {
-        uri: "torch.js",
-        params: {
-          venv: "env",
-          path: "applio",
-        }
       }
     },
     {
