@@ -5,9 +5,10 @@ module.exports = {
       id: "start",
       method: "shell.run",
       params: {
-        conda: {
-          path: "env",
-        },
+        venv: "env",
+//        conda: {
+//          path: "env",
+//        },
         path: "applio",
         message: [
           "python app.py",
