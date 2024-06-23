@@ -30,12 +30,12 @@ module.exports = {
         ],
       }
     },
-    {
-      method: "fs.link",
-      params: {
-        venv: "applio/env"
-      }
-    },
+//    {
+//      method: "fs.link",
+//      params: {
+//        venv: "applio/env"
+//      }
+//    },
     {
       method: "notify",
       params: {
