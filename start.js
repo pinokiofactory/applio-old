@@ -9,9 +9,6 @@ module.exports = {
         env: {
           PYTORCH_ENABLE_MPS_FALLBACK: "1"
         },
-//        conda: {
-//          path: "env",
-//        },
         path: "applio",
         message: [
           "python app.py",
