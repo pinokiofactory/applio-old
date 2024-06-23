@@ -16,7 +16,7 @@ module.exports = {
         path: "applio",
         message: [
           "pip install --upgrade setuptools",
-          "pip install -r requirements.txt",
+          "pip install -r ../requirements.txt",
         ],
       }
     },
