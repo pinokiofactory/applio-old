@@ -10,6 +10,18 @@ module.exports = {
       }
     },
     {
+      method: "shell.run",
+      params: {
+        venv: "env",
+        path: "applio",
+        message: [
+          "pip install --upgrade setuptools",
+          "pip install -r requirements.txt",
+          "pip uninstall torch torchvision torchaudio -y"
+        ],
+      }
+    },
+    {
       method: "script.start",
       params: {
         uri: "torch.js",
@@ -17,17 +29,6 @@ module.exports = {
           venv: "env",
           path: "applio",
         }
-      }
-    },
-    {
-      method: "shell.run",
-      params: {
-        venv: "env",
-        path: "applio",
-        message: [
-          "pip install --upgrade setuptools",
-          "pip install -r ../requirements.txt",
-        ],
       }
     },
 //    {
