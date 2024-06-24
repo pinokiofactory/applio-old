@@ -5,8 +5,9 @@ module.exports = {
       id: "start",
       method: "shell.run",
       params: {
-        conda: {
-          path: "env",
+        venv: "env",
+        env: {
+          PYTORCH_ENABLE_MPS_FALLBACK: "1"
         },
         path: "applio",
         message: [
